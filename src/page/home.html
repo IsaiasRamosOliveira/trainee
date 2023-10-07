@@ -1,17 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trainee</title>
-  <link rel="stylesheet" href="/src/css/global-home.css">
-</head>
-<body id="container">
-  <aside id="aside">aside</aside>
-  <main id="main">
-    <header id="header">header</header>
-    <div id="watch">watch</div>
-    <div id="tutorials">tutorials</div>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trainee</title>
+    <link rel="stylesheet" href="/src/css/global-home.css" />
+    <link rel="stylesheet" href="/src/css/aside.css" />
+  </head>
+  <body id="container">
+    <aside id="aside">
+      <section class="aside__nav">
+        <h3>Trainee</h3>
+        <div class="nav__summary nav__summary--dashboard">
+          <a href="" class="summary__page">
+            <img src="/src/imgs/aside/videogame.png" alt="" />
+            <span>Dashboard</span>
+          </a>
+          <a href="" class="summary__page">
+            <img src="/src/imgs/aside/compass2.png" alt="" />
+            <span>Discover</span>
+          </a>
+          <a href="" class="summary__page">
+            <img src="/src/imgs/aside/messenger.png" alt="" />
+            <span>Messages</span>
+          </a>
+          <a href="" class="summary__page">
+            <img src="/src/imgs/aside/edit.png" alt="" />
+            <span>Settings</span>
+          </a>
+        </div>
+        <div class="nav__summary nav__summary--progress">
+          <a href="" class="summary__page">
+            <img src="/src/imgs/aside/stat.png" alt="" />
+            <span>Progress</span>
+          </a>
+          <a href="" class="summary__page summary__lesson">
+            <span>Lesson 6. Java Script</span>
+          </a>
+          <a href="" class="summary__page summary__lesson">
+            <span>Lesson 7. Basic Math</span>
+          </a>
+          <a href="" class="summary__page summary__lesson">
+            <span>Lesson 8. Physics</span>
+          </a>
+        </div>
+        <div class="nav__achievements">
+          <a class="achievements__anchor" href="">
+            <img src="/src/imgs/aside/diamante.png" alt="" />
+            Achievements
+          </a>
+          <button class="achievements__button">
+            <img src="/src/imgs/aside/musical-sign-of-two-dots.png" alt="" />
+          </button>
+        </div>
+        <div class="nav__userCards">
+          <a class="userCards__card">
+            <img src="/src/imgs/aside/loading.png" alt="" />
+            <div class="achievement__description">
+              <h5>
+                70+% <br />
+                Progress
+              </h5>
+              <p>6 of 8 lessons done</p>
+            </div>
+          </a>
+          <a class="userCards__card">
+            <img src="/src/imgs/aside/verify.png" alt="" />
+            <div class="achievement__description">
+              <h5>Best score</h5>
+              <p>Average score 9.2</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </aside>
+    <main id="main">
+      <header id="header">header</header>
+      <div id="watch">watch</div>
+      <div id="tutorials">tutorials</div>
+    </main>
+  </body>
 </html>
