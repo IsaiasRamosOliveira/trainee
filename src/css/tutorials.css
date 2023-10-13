@@ -1,0 +1,255 @@
+#tutorials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 80px 0 40px;
+    background-color: #191d1e;
+    color: #a1a3a8;
+    font-size: 14px;
+}
+
+#tutorials button, 
+#tutorials input {
+    border: none;
+    cursor: pointer;
+}
+
+#tutorials h2, 
+#tutorials p {
+    padding: 0 0 10px 0;
+}
+
+/* tutorials form */
+.tutorials__form > 
+.form__reading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reading__description >
+.description__title::after {
+    content: "tutorials";
+    color: #ebe4e4;
+}
+
+.reading__button {
+    background-color: #191d1e;
+}
+
+.button__dots {
+    width: 14px;
+    height: 14px;
+}
+
+.form__send {
+    display: flex;
+    justify-content: space-between;
+}
+
+.send__input,
+.send__button {
+    border-radius: 6px;
+    color: #ebe4e4;
+}
+
+.send__input {
+    min-width: 120px;
+    width: 75%;
+    height: 45px;
+    padding-left: 15px;
+    margin-right: 15px;
+    background-color: #282a2b;
+}
+
+.send__button {
+    min-width: 40px;
+    width: 20%;
+    height: 45px;
+    background-color: #333536;
+}
+
+/* tutorials meeting */
+.tutorials__meeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.meeting__reading {
+    display: flex;
+    justify-content: space-between;
+    color: #ebe4e4;
+    align-items: center;
+    margin: 30px 0 8px 0;
+}
+
+.reading__button {
+    display: flex;
+    align-items: center;
+}
+
+.meeting__img {
+    min-width: 350px;
+    height: 28vh;
+    border-radius: 12px 12px 0 0;
+}
+
+/* tutorials students */
+.tutorials__students {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.students__text {
+    font-size: 16px;
+    color: #ebe4e4;
+}
+
+.students__profiles {
+    display: flex;
+    margin-left: 20px;
+}
+
+.profiles__img,
+.profiles__more {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+    border-radius: 20px;
+    border: 5px solid #191d1e;
+}
+
+.profiles__img--margin {
+    margin-left: -20px;
+}
+
+.profiles__on {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(95, 226, 117);
+    right: 35px;
+    top: 27px;
+}
+
+.profiles__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-left: 5px;
+    background-color: #323337;
+    color:#256edb;
+}
+
+/* tutorials buy */
+.tutorials__buy >
+.buy__poster {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.poster__offer >
+.offer__title::after {
+    content: "offers";
+    color: #ebe4e4;
+}
+
+.offer__button {
+    background-color: #191d1e;
+}
+
+.offer__button--spacing {
+    margin-right: 220px;
+}
+
+.button__next {
+    width: 20px;
+    height: 20px;
+}
+
+.buy__banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+    height: 20vh;
+    gap: 100px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    background: rgb(124,121,252);
+    background: linear-gradient(112deg, rgba(124,121,252,1) 0%, rgba(124,121,252,1) 20%, rgba(220,143,198,1) 100%);
+}
+
+.banner__img {
+    width: 100px;
+    height: 100px;
+}
+
+.banner__logo >
+.logo__text {
+    margin: 0 0 15px -6px;
+    color: #323337;
+}
+
+.logo__button {
+    width: 140px;
+    height: 45px;
+    background-color: #323337;
+    color: #fff;
+    border-radius: 6px;
+}
+
+/* media */
+@media screen and (max-width: 1600px) {
+    #tutorials {
+      padding: 0 20px 0 20px;
+      font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .meeting__reading {
+      margin: 0;
+    }
+
+    .meeting__img {
+      min-width: 230px;
+      height: 20vh;
+    }
+
+    .offer__button--spacing {
+      margin-right: 50px;
+    }
+
+    .buy__banner {
+      min-width: 230px;
+      gap: 12px;
+      margin-bottom: 40px;
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    #tutorials {
+      padding: 15px 20px 0 20px;
+    }
+
+    .meeting__img {
+      min-width: 230px;
+      height: 27vh;
+    }
+
+    .banner__img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .buy__banner {
+      flex-direction: row;
+      gap: 50px;
+    }
+}

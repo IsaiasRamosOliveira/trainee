@@ -6,6 +6,7 @@
   <title>Trainee</title>
   <link rel="stylesheet" href="/src/css/global-home.css">
   <link rel="stylesheet" href="/src/css/header.css">
+  <link rel="stylesheet" href="/src/css/tutorials.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,1,0" />
 </head>
 <body id="container">
@@ -40,62 +41,65 @@
     <div id="watch">watch</div>
     <div id="tutorials">
       <form class="tutorials__form" action="#" method="get">
-        <fieldset class="form__reading">
+        <div class="form__reading">
           <legend class="reading__description">
-            <h2 class="description__title">Search tutorials</h2>
+            <h2 class="description__title">Search </h2>
             <p class="description__text">More than 1000 tutorials</p>
           </legend>
           <button class="reading__button">
-            <img class="button__img" src="" alt="">
+            <img class="button__dots" src="/src/imgs/tutorials/two-dots.png" alt="two dots button">
           </button>
-        </fieldset>
+        </div>
         <label class="form__send" for="search">
           <input class="send__input" type="text" placeholder="Find best tutorial..." required>
           <button class="send__button" type="submit">Search</button>
         </label>
       </form>
-
-      <div class="tutorials__students">
-        <div class="students__reading">
-          <h2 class="reading__title">2 000+ studying now</h2>
+      <div class="tutorials__meeting">
+        <div class="meeting__reading">
+          <h2 class="reading__title">2 000+ students studying now</h2>
           <button class="reading__button">
-            <img class="button__img" src="" alt="">
+            <img class="button__dots" src="/src/imgs/tutorials/two-dots.png" alt="two dots button">
           </button>
         </div>
-        <img class="students__img" src="" alt="">
+        <img class="meeting__img" src="/src/imgs/tutorials/meeting.jpg" alt="student meeting">
+      </div>
+      <div class="tutorials__students">
         <p class="students__text">9 tutors is ready to help you</p>
         <picture class="students__profiles">
-          <img class="profiles__img" src="" alt="">
-          <img class="profiles__img" src="" alt="">
-          <img class="profiles__img" src="" alt="">
-          <img class="profiles__img" src="" alt="">
-          <img class="profiles__img" src="" alt="">
-          <span class="profiles__more"></span>
+          <img class="profiles__img profiles__img--margin" src="/src/imgs/tutorials/profile1.jpg" alt="profile picture">
+          <div class="profiles__on"></div>
+          <img class="profiles__img profiles__img--margin" src="/src/imgs/tutorials/profile2.jpg" alt="profile picture">
+          <div class="profiles__on"></div>
+          <img class="profiles__img profiles__img--margin" src="/src/imgs/tutorials/profile3.jpg" alt="profile picture">
+          <div class="profiles__on"></div>
+          <img class="profiles__img profiles__img--margin" src="/src/imgs/tutorials/profile4.jpeg" alt="profile picture">
+          <img class="profiles__img" src="/src/imgs/tutorials/profile5.jfif" alt="profile picture">
+          <span class="profiles__more"><strong>+4</strong></span>
         </picture>
       </div>
-
-      <div class="tutorials__offers">
-        <div class="offers__reading">
-          <div class="reading__description">
-            <h2 class="description__title">Special offers</h2>
-            <p class="description__text">Up to -70% discount</p>
-            <button class="description__button">
-              <img class="button__img" src="" alt="">
-            </button>
+      <div class="tutorials__buy">
+        <div class="buy__poster">
+          <div class="poster__offer">
+            <h2 class="offer__title">Special </h2>
+            <p class="offer__text">Up to -70% discount</p>
           </div>
-          <button class="offers__button">
-            <img class="button__img" src="" alt="">
+          <button class="offer__button offer__button--spacing">
+            <img class="button__next" src="/src/imgs/tutorials/next.png" alt="next button">
+          </button>
+          <button class="offer__button">
+            <img class="button__dots" src="/src/imgs/tutorials/two-dots.png" alt="two dots button">
           </button>
         </div>
-        <div class="offers__banner">
+        <div class="buy__banner">
+          <img class="banner__img" src="/src/imgs/tutorials/logo.png" alt="logo">
           <div class="banner__logo">
-            <img class="logo__img" src="" alt="">
+            <p class="logo__text">Buy a <strong>physics course</strong> and<br>get a math course <strong>for free!</strong>
+            </p>
+            <button class="logo__button">Buy course</button>
           </div>
-          <p class="banner__text">Buy a physics course and<br>get a math course for free!</p>
-          <button class="banner__button">Buy course</button>
         </div>
       </div>
-
     </div>
   </main>
 </body>
