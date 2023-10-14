@@ -44,11 +44,13 @@
 .nav__summary--dashboard a:hover {
   border-left: 4px solid #a35bf6;
   color: white;
+  transition: 200ms;
 }
 
 .nav__summary--progress a:hover {
-  border-left: 4px solid #d0d1d0;
+  border-left: 4px solid #92F4BB;
   color: white;
+  transition: 200ms;
 }
 
 .summary__page img {
@@ -107,7 +109,7 @@
   border-radius: 10px;
   width: 90px;
   height: 150px;
-  padding: 15px 5px;
+  padding: 20px 15px;
   background-color: #323337;
   display: flex;
   flex-direction: column;
