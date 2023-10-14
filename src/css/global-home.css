@@ -49,8 +49,19 @@
 
 #tutorials {
     grid-area: tutorials;
-    overflow: hidden;
+    overflow: auto;
     background-color: aquamarine;
+}
+
+#watch::-webkit-scrollbar,
+#tutorials::-webkit-scrollbar {
+    width: 4px; 
+}
+
+#watch::-webkit-scrollbar-thumb, 
+#tutorials::-webkit-scrollbar-thumb {
+    background-color: #272830;
+    border-radius: 4%;
 }
 
 @media screen and (max-width: 798px) {
