@@ -1,7 +1,7 @@
 #watch {
   background-color: #191d1e;
   color: #e2dcdc;
-  padding: 0 56px;
+  padding: 0 56px 20px 56px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
 }
 
 .description__nextButton {
@@ -42,19 +43,19 @@
 
 .menu__button,
 .options__button,
-.options__search{
+.options__search {
   height: 23px;
 }
 
 .menu__button img,
 .options__button img,
-.tutors__menu > .menu__options > .options__search img{
+.tutors__menu > .menu__options > .options__search img {
   width: 14px;
 }
 
 .watchNow__menu > .menu__description,
 .tutors__menu > .menu__options,
-.watch__tutors{
+.watch__tutors {
   gap: 20px;
 }
 
@@ -62,10 +63,10 @@
   display: flex;
   gap: 17px;
   padding: 1px;
-  width: 100%;
   overflow: hidden;
   overflow-x: auto;
   list-style: none;
+  justify-content: center;
 }
 
 .stream__img {
@@ -80,7 +81,7 @@
 }
 
 .watch__popular,
-.popular__item{
+.popular__item {
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -91,26 +92,23 @@
   flex-direction: column;
 }
 
-.popular__content{
+.popular__content {
   display: flex;
+  gap: 22px;
+  flex: 1;
 }
 
 .watchNow__menu,
 .watchNow__menu .menu__description,
 .tutors__menu .menu__options,
 .popular__menu,
-.tutors__menu{
+.tutors__menu {
   display: flex;
   justify-content: space-between;
 }
 
-.popular__content {
-  gap: 22px;
-}
-
 .popular__item {
-  min-width: 255px;
-  max-width: 360px;
+  width: 100%;
 }
 
 .popular__item:hover {
@@ -118,8 +116,9 @@
   transition: 200ms;
 }
 
-.popular__item > img{
+.popular__item > img {
   border-radius: 15px;
+  width: 100%;
 }
 
 .item__description {
@@ -128,41 +127,45 @@
   justify-content: space-between;
 }
 
-.item__description button img{
+.item__description button img {
   width: 18px;
 }
 
 .popular__item .item__description,
-.popular__item .item__description img{
+.popular__item .item__description img {
   cursor: pointer;
 }
 
 .options__filter {
   background-color: transparent;
   width: 100px;
-  height: 27px;
-  padding: 0 5px;
+  height: 29px;
+  padding: 0 10px;
 }
 
 .tutors__menu > .menu__options > .options__filter {
-  border: 1px solid #629F7E;
-  border-radius: 12px;
-  color: #629F7E;
+  border: 1px solid #629f7e;
+  border-radius: 14px;
+  color: #629f7e;
 }
 
 .tutors__list {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
+  justify-content: center;
 }
 
 .tutors__list .list__tutor {
   display: flex;
+  align-items: center;
   color: white;
   padding: 28px;
   background-color: #202425;
-  width: 360px;
   border-radius: 12px;
+  flex: 1;
+  min-width: 260px;
+  max-width: 400px;
 }
 
 .tutors__list .list__tutor:hover {
@@ -180,8 +183,7 @@
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  width: 200px;
-  height: 100%;
+  width: 100%;
   padding-left: 20px;
 }
 
@@ -196,63 +198,23 @@
   background-color: #191d1e;
 }
 
-@media screen and (min-width: 2705px) {
-  .watch div {
-    max-width: 1125px;
-  }
-}
-
-@media screen and (max-width: 1425px) {
-  .popular__content,
-  .tutors__list {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 @media screen and (max-width: 1000px) {
   #watch {
-    padding: 0 30px;
+    padding: 0 30px 20px 30px;
   }
 }
 
 @media screen and (max-width: 798px) {
   #watch {
-    padding: 0 16px;
+    padding: 0 16px 20px 16px;
   }
 }
 
-@media screen and (max-width: 380px) {
-  .tutors__list .list__tutor {
-    padding: 15px;
-    width: 300px;
-  }
-
-  .tutor__description  {
-    width: 200px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .popular__item {
-    width: 240px;
-  }
-
-  .tutors__list .list__tutor {
-    padding: 15px;
-    width: 240px;
-  }
-
-  .tutor__description  {
-    width: 100px;
-  }
-}
-
-.watchNow__streamsList::-webkit-scrollbar{
-    height: 8px;
+.watchNow__streamsList::-webkit-scrollbar {
+  height: 8px;
 }
 
 .watchNow__streamsList::-webkit-scrollbar-thumb {
-    background-color: #272830;
-    border-radius: 4%;
+  background-color: #272830;
+  border-radius: 4%;
 }
