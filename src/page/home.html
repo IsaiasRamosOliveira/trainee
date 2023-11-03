@@ -12,9 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,1,0"
     />
     <link rel="stylesheet" href="/src/css/aside.css" />
+    <link rel="stylesheet" href="/src/css/watch.css" />
   </head>
   <body id="container">
-    <aside id="aside">
+   <aside id="aside">
       <section class="aside__nav">
         <h3>Trainee</h3>
         <div class="nav__summary nav__summary--dashboard">
@@ -123,7 +124,206 @@
           </button>
         </div>
       </header>
-      <div id="watch">watch</div>
+      <div id="watch" class="watch">
+        <div class="watch__watchNow">
+          <div class="watchNow__menu">
+            <div class="menu__description">
+              <span>
+                <h3>Watch Now</h3>
+                <p>Studying streams</p>
+              </span>
+              <button class="description__nextButton">
+                <img src="/src/imgs/watch/next.png" alt="nextButton" />
+              </button>
+            </div>
+            <button class="menu__button">
+              <img src="/src/imgs/watch/two-dots.png" alt="" />
+            </button>
+          </div>
+          <ul class="watchNow__streamsList">
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live1.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live2.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live3.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live4.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live5.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live6.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live7.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live8.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live9.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live10.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="streamsList__user">
+              <a href="" class="user__stream">
+                <img
+                  class="stream__img"
+                  src="/src/imgs/watch/live11.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="watch__popular">
+          <div class="popular__menu">
+            <h3>Popular Today</h3>
+            <button class="menu__button">
+              <img src="/src/imgs/watch/two-dots.png" alt="" />
+            </button>
+          </div>
+          <div class="popular__content">
+            <div class="popular__item">
+              <img src="/src/imgs/watch/brain-running.jpg" alt="" />
+              <div class="item__description">
+                <p>Form your strong opinion</p>
+                <button>
+                  <img src="/src/imgs/watch/arrow-right.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="popular__item">
+              <img class="item__img" src="/src/imgs/watch/hands-sharing.jpg" alt="" />
+              <div class="item__description">
+                <p>How to get contacts easily?</p>
+                <button>
+                  <img src="/src/imgs/watch/arrow-right.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="watch__tutors">
+          <div class="tutors__menu">
+            <span class="menu__description">
+              <h3>Top Tutors</h3>
+              <p>Add them to list</p>
+            </span>
+            <div class="menu__options">
+              <select name="options__filter" class="options__filter">
+                <option value="this-week">This Week</option>
+              </select>
+              <button class="options__search">
+                <img src="/src/imgs/watch/search-img.png" alt="search" />
+              </button>
+              <button class="options__button">
+                <img src="/src/imgs/watch/two-dots.png" alt="tutorsMenu" />
+              </button>
+            </div>
+          </div>
+          <div class="tutors__list">
+            <button class="list__tutor">
+              <img class="tutor__pic" src="/src/imgs/watch/tutor1.jpg" alt="" />
+              <span class="tutor__description">
+                  <p class="description__name">Anna Karlos</p>
+                  <p class="tutor__subject">Programming</p>
+              </span>
+              <img class="tutor__add" src="/src/imgs/watch/add.png" alt="">
+            </button>
+            <button class="list__tutor">
+              <img class="tutor__pic" src="/src/imgs/watch/tutor2.jpg" alt="" />
+              <span class="tutor__description">
+                <p class="description__name">Karla May</p>
+                <p class="tutor__subject">Maths</p>
+              </span>
+              <img class="tutor__add" src="/src/imgs/watch/add.png" alt="" />
+            </button>
+            <button class="list__tutor">
+              <img class="tutor__pic" src="/src/imgs/watch/tutor3.jpg" alt="" />
+              <span class="tutor__description">
+                <p class="description__name">Bill Jesson</p>
+                <p class="tutor__subject">Design</p>
+              </span>
+              <img class="tutor__add" src="/src/imgs/watch/add.png" alt="" />
+            </button>
+            <button class="list__tutor">
+              <img class="tutor__pic" src="/src/imgs/watch/tutor4.jpg" alt="" />
+              <span class="tutor__description">
+                <p class="description__name">Alan Baker</p>
+                <p class="tutor__subject">Physics</p>
+              </span>
+              <img class="tutor__add" src="/src/imgs/watch/add.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
       <div id="tutorials">
         <form class="tutorials__form" action="#" method="get">
           <div class="form__reading">
