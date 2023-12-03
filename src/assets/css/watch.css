@@ -109,6 +109,8 @@
 
 .popular__item {
   width: 100%;
+  text-decoration: none;
+  color: white;
 }
 
 .popular__item:hover {
