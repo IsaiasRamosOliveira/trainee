@@ -1,0 +1,138 @@
+#aside {
+  background-color: #191d1e;
+  display: flex;
+  justify-content: center;
+  color: white;
+  overflow-y: auto;
+}
+
+.aside__nav {
+  min-width: 120px;
+  max-width: 300px;
+  max-height: 1080px;
+  padding: 40px 15px 60px 10px;
+  gap: 40px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav__summary {
+  width: 100%;
+  background-color: #202425;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  border-radius: 12px;
+  gap: 25px;
+}
+
+.summary__page {
+  width: 100%;
+  height: 25px;
+  text-decoration: none;
+  color: #C9CACE;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  right: 4px;
+}
+
+.nav__summary--dashboard a:hover {
+  border-left: 4px solid #a35bf6;
+  color: white;
+  transition: 200ms;
+}
+
+.nav__summary--progress a:hover {
+  border-left: 4px solid #92F4BB;
+  color: white;
+  transition: 200ms;
+}
+
+.summary__page img {
+  width: 25px;
+  margin-left: 20px;
+}
+
+.summary__lesson {
+  padding-left: 20px;
+}
+
+.nav__achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+}
+
+.achievements__anchor {
+  gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.nav__achievements img {
+  width: 25px;
+  height: 25px;
+}
+
+.achievements__button {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.achievements__button img {
+  width: 15px;
+  height: 15px;
+}
+
+.nav__userCards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.userCards__card {
+  border-radius: 10px;
+  width: 90px;
+  height: 150px;
+  padding: 20px 15px;
+  background-color: #323337;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userCards__card img {
+  width: 30px;
+}
+
+.userCards__card p {
+  font-size: 11px;
+  color: #C9CACE;
+}
+
+@media screen and (max-width: 890px) {
+  .achievements__anchor {
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .aside__nav {
+    left: 0;
+  }
+}

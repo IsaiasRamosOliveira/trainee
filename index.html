@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Trainee</title>
+    <link rel="stylesheet" href="/src/css/global-login.css" />
+    <link rel="stylesheet" href="/src/css/page-login.css" />
+  </head>
+  <body id="container">
+    <div id="wrapper">
+      <div class="wrapper__description">
+        <img
+          class="description__img"
+          src="/src/imgs/page-login/logo.png"
+          alt=""
+        />
+        <h1 class="description__title">Allocate</h1>
+      </div>
+
+      <form class="wrapper__form" action="/src/page/home.html" method="get">
+        <input class="form__email" type="email" placeholder="Email" required />
+        <input
+          class="form__password"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <div class="form__save">
+          <input class="save__check" type="checkbox" />
+          <span class="save__text">Remember me</span>
+        </div>
+        <div class="form__options">
+          <a class="options__lost" href="#">Lost your password?</a>
+          <span class="options__line"></span>
+          <a class="options__create" href="#">Sign Up</a>
+          <button class="options__button" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
