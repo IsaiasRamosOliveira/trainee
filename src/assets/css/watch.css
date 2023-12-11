@@ -8,13 +8,13 @@
   gap: 30px;
 }
 
-.watch button {
+#watch button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
 }
 
-.watch h3 {
+#watch h3 {
   color: #ebe4e4;
 }
 
@@ -45,6 +45,10 @@
 .options__button,
 .options__search {
   height: 23px;
+}
+
+.options__button span {
+  color: white;
 }
 
 .menu__button img,
@@ -156,7 +160,7 @@
   justify-content: center;
 }
 
-.tutors__list .list__tutor {
+#watch .tutors__list .list__tutor {
   display: flex;
   align-items: center;
   color: white;
@@ -198,6 +202,28 @@
   background-color: #191d1e;
 }
 
+#watch.lightMode h3 {
+  color: black;
+}
+
+#watch.lightMode .tutors__list .list__tutor {
+  background-color: #e6e7e7;
+  color: black;
+}
+
+#watch.lightMode .tutor__add {
+  background-color: white;
+}
+
+#watch.lightMode .button__dots {
+  color: #00a8f3;
+}
+
+#watch.lightMode {
+  background-color: white;
+  color: black;
+}
+
 @media screen and (max-width: 1000px) {
   #watch {
     padding: 0 30px 20px 30px;
@@ -217,4 +243,8 @@
 .watchNow__streamsList::-webkit-scrollbar-thumb {
   background-color: #272830;
   border-radius: 4%;
+}
+
+#watch.lightMode .watchNow__streamsList::-webkit-scrollbar-thumb {
+  background-color: #e6e7e7;
 }
