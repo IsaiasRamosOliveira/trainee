@@ -7,9 +7,6 @@
   width: 500px;
   height: 350px;
   border-radius: 8px;
-  z-index: 11;
-  transition: 0.3s;
-  pointer-events: all;
   border: 1px solid #92939736;
 }
 
