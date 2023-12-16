@@ -1,5 +1,5 @@
-export function openModal(container, ComponentModal, submitForm) {
-  container.innerHTML += ComponentModal();
+export function openModal(container, ComponentModal, submitForm, content) {
+  container.innerHTML += ComponentModal(content);
   if (submitForm) {
     submitForm();
   }
