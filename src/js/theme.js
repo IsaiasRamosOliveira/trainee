@@ -1,6 +1,6 @@
 const changeThemeButton = document.querySelector(".account__mode");
 const screenBlocks = document.querySelectorAll(
-  "#container,#aside, #watch, #header, #tutorials"
+  "#container, #aside, #watch, #header, #tutorials"
 );
 
 function toggleThemeFunction() {
