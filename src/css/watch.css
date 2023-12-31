@@ -241,10 +241,5 @@
 }
 
 .watchNow__streamsList::-webkit-scrollbar-thumb {
-  background-color: #272830;
   border-radius: 4%;
-}
-
-#watch.lightMode .watchNow__streamsList::-webkit-scrollbar-thumb {
-  background-color: #e6e7e7;
 }

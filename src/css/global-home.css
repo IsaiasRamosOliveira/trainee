@@ -11,6 +11,11 @@
   width: 4px;
 }
 
+#container.lightMode *::-webkit-scrollbar-thumb {
+  background-color: #a1a3a8;
+  border-radius: 4%;
+}
+
 *::-webkit-scrollbar-thumb {
   background-color: #272830;
   border-radius: 4%;
