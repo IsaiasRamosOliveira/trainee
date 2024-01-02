@@ -1,5 +1,16 @@
-import { closeModal } from "../../utils/closeModal.js";
-import { openModal } from "../../utils/openModal.js";
+function openModal(container, ComponentModal, submitForm, content) {
+  container.innerHTML += ComponentModal(content);
+  if (submitForm) {
+    submitForm();
+  }
+}
+
+function closeModal(container) {
+  if (container) {
+    container.parentElement.remove();
+  }
+  return;
+}
 
 export const ComponentModal = (content) => {
   const container = document.querySelector("#container");
@@ -23,7 +34,6 @@ export const ComponentModal = (content) => {
   });
 
   const Modal = (content) => {
-
     let modal = `
     <div class="modal">
       <div class="modal__container">
@@ -42,4 +52,6 @@ export const ComponentModal = (content) => {
   }
 }
 
-
+if ( ComponentModal() === null || ComponentModal() === undefined ) {
+  ComponentModal('');
+};
