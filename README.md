@@ -1,48 +1,24 @@
-<h1 align="center">Trainee - Students' Website</h1> 
-<h3 align="center"> Isaías Ramos de Oliveira Training - Class B</h3>
-<br>
+<h1 align="center"> Trainee </h1>
 
 <p align="center">
-  Layout constructed to represent a trainee's website,
-  Following general methodologies for commits, structure and stylization. With the purpose of training the contributors on group-based web development.<br>
-</p>
-
-<p align="center">
-  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-login-screen">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-other-projects-made-by-us">Other Projects</a>
+  Program promoted by Isaías Ramos for teaching technology. <br>
 </p>
 
 
 
+<p align="center">
+  <img alt="Trainee" src="https://cdn.dribbble.com/users/1684108/screenshots/16661616/media/88c75386cb6fe336fa1ad249f0f6434a.jpeg?resize=1000x750&vertical=center" width="100%" >
+</p>
+<p align="center"> The layout represents the online course dashboard can be a useful tool to help students stay organized and on track to complete a course. It can help students keep up with course content, identify areas where they may need additional help, and prepare for future deadlines </p>
 
-## 🚀 Technologies
+## 📱 Tecnologias
 
-Technologies used in this the project:
+This project was developed with the following technologies:
 
-- HTML
-- CSS
-- Git
+- HTML e CSS
+- JavaScript
+- Git e Github
 
+## 🖥️ Layout
 
-# 🖥️ Login Screen
-<img src="https://cdn.dribbble.com/users/9504/screenshots/1291913/media/2c23874550efb94523b233d3aaaa03a9.png?resize=800x600&vertical=center" alt="">
-<br>
-<br>
-
-Login screen where users can log in or sign up.
-
-
-# 🖥️ Home screen
-
-<img align='center' src="https://cdn.dribbble.com/users/1684108/screenshots/16661616/media/d48d1a5a795fe74734dee1a1565f9c7f.jpeg" alt="" >
-<br>
-<br>
-
-Home screen with all the website's content.
-
-## 🔍 Other Projects Made By Us
-
-- [Netflix Gamified](https://github.com/IsaiasRamosOliveira/netflax-sala-a) 
-- [Milao](https://github.com/IsaiasRamosOliveira/milao-sala-b)
-- [Hyper](https://github.com/IsaiasRamosOliveira/hyper-sala-a) (in progress)
+You can view the author of the image through: [this LINK](https://dribbble.com/shots/16661616-Online-Course-Dashboard).

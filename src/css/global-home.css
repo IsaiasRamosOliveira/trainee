@@ -8,7 +8,8 @@
 }
 
 *::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
+  height: 8px;
 }
 
 #container.lightMode *::-webkit-scrollbar-thumb {
@@ -18,7 +19,7 @@
 
 *::-webkit-scrollbar-thumb {
   background-color: #272830;
-  border-radius: 4%;
+  border-radius: 20px;
 }
 
 #container {
@@ -27,13 +28,13 @@
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
   grid-template-areas: "aside main";
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #aside {
   grid-area: aside;
   overflow: hidden;
-  background-color: brown;
+  background-color: var(--ColorAside);
 }
 
 #main {
@@ -51,22 +52,26 @@
 #header {
   grid-area: header;
   overflow: hidden;
+  background-color: var(--ColorHeader);
 }
 
 #watch {
   grid-area: watch;
   overflow: hidden;
+  background-color: var(--ColorWatch);
 }
 
 #tutorials {
   grid-area: tutorials;
-  overflow: auto;
+  overflow: hidden;
+  background-color: var(--ColorTutorials);
 }
 
 @media screen and (max-width: 798px) {
   #container {
     grid-template-columns: 0 1fr;
     grid-template-rows: 1fr;
+
   }
 
   #main {
@@ -87,7 +92,7 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 480px) {
   #container {
     grid-template-columns: 0 1fr;
     grid-template-rows: 1fr;
@@ -99,7 +104,7 @@
   }
 
   #header {
-    height: 60px;
+    height: 80px;
   }
 
   #watch {

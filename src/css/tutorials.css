@@ -35,7 +35,8 @@
   background-color: #191d1e;
 }
 
-.button__dots {
+.offer__button > .button__dots,
+.reading__button > .button__dots {
   width: 14px;
   height: 14px;
 }
