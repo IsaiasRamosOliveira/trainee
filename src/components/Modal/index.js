@@ -14,7 +14,6 @@ function closeModal(container) {
 
 export const ComponentModal = (content) => {
   const container = document.querySelector("#container");
-
   container.addEventListener("click", (e) => {
     const btn = e.target.getAttribute("class");
     const close = container.querySelector(".modal__container");

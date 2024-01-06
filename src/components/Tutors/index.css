@@ -1,0 +1,41 @@
+.tutors, 
+.tutors__form, 
+.form__inputs {
+  height: 100%;
+  width: 100%;
+}
+
+.tutors__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#inputs__name, 
+#inputs__sub, 
+#inputs__url {
+  padding-left: 15px;
+  background-color: #282a2b;
+}
+
+.inputs__button {
+  background-color: #333536;
+}
+
+#inputs__name, 
+#inputs__sub, 
+#inputs__url,
+.inputs__button {
+  border-radius: 6px;
+  width: 80%;
+  height: 40px;
+  border: none;
+  color: #e2dcdc;
+}
