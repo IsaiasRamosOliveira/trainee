@@ -8,12 +8,12 @@ const tutors = () => {
     <div class="tutors">
       <form class="tutors__form">
         <legend class="form__description">Add New Tutor</legend>
-        <label class="form__inputs">
+        <div class="form__inputs">
           <input id="inputs__name" type="text" placeholder="Name" required>
           <input id="inputs__sub" type="text" placeholder="Subject" required>
           <input id="inputs__url" type="text" placeholder="Profile Picture Url" required>
           <button class="inputs__button" type="submit">Send</button>
-        </label>
+        </div>
       </form>
     </div>
   `;

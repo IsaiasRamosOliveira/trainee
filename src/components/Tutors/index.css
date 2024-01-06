@@ -38,4 +38,12 @@
   height: 40px;
   border: none;
   color: #e2dcdc;
+  cursor: pointer;
+}
+
+#inputs__name:focus, 
+#inputs__sub:focus, 
+#inputs__url:focus,
+.inputs__button:focus {
+  cursor: auto;
 }
