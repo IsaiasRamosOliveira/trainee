@@ -23,7 +23,7 @@ Technologies used in this the project:
 - HTML
 - CSS
 - Git
-
+- Javascript
 
 # 🖥️ Login Screen
 <img src="https://cdn.dribbble.com/users/9504/screenshots/1291913/media/2c23874550efb94523b233d3aaaa03a9.png?resize=800x600&vertical=center" alt="">

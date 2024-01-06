@@ -13,9 +13,12 @@
     />
     <link rel="stylesheet" href="/src/css/aside.css" />
     <link rel="stylesheet" href="/src/css/watch.css" />
+    <link rel="stylesheet" href="/src/components/Modal/index.css" />
+    <link rel="stylesheet" href="/src/components/Watch/index.css">
   </head>
+
   <body id="container">
-   <aside id="aside">
+    <aside id="aside">
       <section class="aside__nav">
         <h3>Trainee</h3>
         <div class="nav__summary nav__summary--dashboard">
@@ -57,7 +60,11 @@
             Achievements
           </a>
           <button class="achievements__button">
-            <img src="/src/imgs/aside/musical-sign-of-two-dots.png" alt="" />
+            <img
+              class="button__dots"
+              src="/src/imgs/aside/musical-sign-of-two-dots.png"
+              alt=""
+            />
           </button>
         </div>
         <div class="nav__userCards">
@@ -137,7 +144,11 @@
               </button>
             </div>
             <button class="menu__button">
-              <img src="/src/imgs/watch/two-dots.png" alt="" />
+              <img
+                class="button__dots"
+                src="/src/imgs/watch/two-dots.png"
+                alt=""
+              />
             </button>
           </div>
           <ul class="watchNow__streamsList">
@@ -246,11 +257,15 @@
           <div class="popular__menu">
             <h3>Popular Today</h3>
             <button class="menu__button">
-              <img src="/src/imgs/watch/two-dots.png" alt="" />
+              <img
+                class="button__dots"
+                src="/src/imgs/watch/two-dots.png"
+                alt=""
+              />
             </button>
           </div>
           <div class="popular__content">
-            <a href="/src/pages/formYourOpinion.html" class="popular__item">
+            <div class="popular__item">
               <img src="/src/imgs/watch/brain-running.jpg" alt="" />
               <div class="item__description">
                 <p>Form your strong opinion</p>
@@ -258,16 +273,20 @@
                   <img src="/src/imgs/watch/arrow-right.png" alt="" />
                 </button>
               </div>
-            </a>
-            <a href="/src/pages/howToGetContacts.html" class="popular__item">
-              <img class="item__img" src="/src/imgs/watch/hands-sharing.jpg" alt="" />
+            </div>
+            <div class="popular__item">
+              <img
+                class="item__img"
+                src="/src/imgs/watch/hands-sharing.jpg"
+                alt=""
+              />
               <div class="item__description">
                 <p>How to get contacts easily?</p>
                 <button>
                   <img src="/src/imgs/watch/arrow-right.png" alt="" />
                 </button>
               </div>
-            </a>
+            </div>
           </div>
         </div>
         <div class="watch__tutors">
@@ -284,7 +303,11 @@
                 <img src="/src/imgs/watch/search-img.png" alt="search" />
               </button>
               <button class="options__button">
-                <img src="/src/imgs/watch/two-dots.png" alt="tutorsMenu" />
+                <img
+                  class="button__dots"
+                  src="/src/imgs/watch/two-dots.png"
+                  alt="tutorsMenu"
+                />
               </button>
             </div>
           </div>
@@ -292,10 +315,10 @@
             <button class="list__tutor">
               <img class="tutor__pic" src="/src/imgs/watch/tutor1.jpg" alt="" />
               <span class="tutor__description">
-                  <p class="description__name">Anna Karlos</p>
-                  <p class="tutor__subject">Programming</p>
+                <p class="description__name">Anna Karlos</p>
+                <p class="tutor__subject">Programming</p>
               </span>
-              <img class="tutor__add" src="/src/imgs/watch/add.png" alt="">
+              <img class="tutor__add" src="/src/imgs/watch/add.png" alt="" />
             </button>
             <button class="list__tutor">
               <img class="tutor__pic" src="/src/imgs/watch/tutor2.jpg" alt="" />
@@ -438,5 +461,7 @@
         </div>
       </div>
     </main>
+    <script type="module" src="/src/components/Modal/index.js"></script>
+    <script type="module" src="/src/components/Watch/index.js"></script>
   </body>
 </html>
