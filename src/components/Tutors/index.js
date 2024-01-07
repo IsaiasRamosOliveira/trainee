@@ -2,6 +2,7 @@ import { ComponentModal } from "../Modal/index.js";
 
 const btnDots = document.querySelectorAll(".button__dots");
 const data = [];
+const btn = document.querySelector(".btn__dots")
 
 const tutors = () => {
   return ` 
@@ -32,35 +33,41 @@ function listTutors(ProfileValue, NameValue, SubjectValue) {
   `;
 }
 
-btnDots.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    if (btn === btnDots[3]) {
-      ComponentModal(tutors());
-      setTimeout(() => {
-        const formTutors = document.querySelector(".form__inputs");
-        const formTutorsButton = document.querySelector(".inputs__button");
 
-        formTutorsButton.addEventListener("click", (e) => {
-          e.preventDefault();
-          const inputProfile = formTutors.querySelector("#inputs__url");
-          const inputName = formTutors.querySelector("#inputs__name");
-          const inputSubject = formTutors.querySelector("#inputs__sub");
+document.addEventListener("click", (e) => {
+  e.preventDefault()
+  if (e.target.className === "btn__dots") {
+    
+    const formTutors = document.querySelector(".form__inputs");
+    const formTutorsButton = document.querySelector(".inputs__button");
+    const container = document.querySelector("#container");
+    
+    const content = tutors()
+    const Modal = ComponentModal()
+    container.innerHTML += Modal(content);
 
-          const NameValue = inputName.value;
-          const SubjectValue = inputSubject.value;
-          const ProfileValue = inputProfile.value;
-          data.push({ ProfileValue, NameValue, SubjectValue });
-          data.forEach((post) => {
-            const tutor = document.querySelector(".tutors__list");
-            tutor.innerHTML += listTutors(
-              post.ProfileValue,
-              post.NameValue,
-              post.SubjectValue
-            );
-          });
-          data.pop();
-        });
+    formTutorsButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      const inputProfile = formTutors.querySelector("#inputs__url");
+      const inputName = formTutors.querySelector("#inputs__name");
+      const inputSubject = formTutors.querySelector("#inputs__sub");
+
+      const NameValue = inputName.value;
+      const SubjectValue = inputSubject.value;
+      const ProfileValue = inputProfile.value;
+      data.push({ ProfileValue, NameValue, SubjectValue });
+      data.forEach((post) => {
+        const tutor = document.querySelector(".tutors__list");
+        tutor.innerHTML += listTutors(
+          post.ProfileValue,
+          post.NameValue,
+          post.SubjectValue
+        );
       });
-    }
+      data.pop();
+    });
+  }
+  btnDots[3].addEventListener("click", () => {
+
   });
-}, 0);
+})
