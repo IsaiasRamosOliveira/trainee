@@ -5,10 +5,9 @@
   background-color: #191d1e;
   color: #a1a3a8;
   font-size: 14px;
-  gap: 30px;
+  gap: 10px;
   padding: 0 20px 40px 20px;
 }
-
 #tutorials button,
 #tutorials input {
   border: none;

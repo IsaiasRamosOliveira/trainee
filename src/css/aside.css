@@ -1,9 +1,13 @@
 #aside {
-  background-color: #191d1e;
+  background-color: #17181A;
   display: flex;
   justify-content: center;
   color: white;
   overflow-y: auto;
+}
+
+.aside__title {
+  font-size: 22px;
 }
 
 .aside__nav {
@@ -43,12 +47,14 @@
 
 .nav__summary--dashboard a:hover {
   border-left: 4px solid #a35bf6;
+  border-radius: 2px;
   color: white;
   transition: 200ms;
 }
 
 .nav__summary--progress a:hover {
   border-left: 4px solid #92F4BB;
+  border-radius: 2px;
   color: white;
   transition: 200ms;
 }
@@ -110,7 +116,7 @@
   border-radius: 10px;
   width: 90px;
   height: 150px;
-  padding: 20px 15px;
+  padding: 20px 10px;
   background-color: #323337;
   display: flex;
   flex-direction: column;
@@ -122,7 +128,7 @@
 }
 
 .userCards__card p {
-  font-size: 11px;
+  font-size: 12px;
   color: #C9CACE;
 }
 
