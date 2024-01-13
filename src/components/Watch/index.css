@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
 }
 
 .watchModal__legend {
@@ -22,9 +21,24 @@
   border-radius: 6px;
   background-color: #282a2b; 
   border: 0;
+  outline: none;
+  padding-left: 10px;
 }
 
 .watchModal__input {
-  outline: none;
-  padding-left: 10px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.watchModal__submit {
+  position: absolute;
+  bottom: 60px;
+}
+
+.watchModal__submit:hover {
+  cursor: pointer;
+}
+
+.watchModal__label > span {
+  color: #e63636;
 }

@@ -1,6 +1,7 @@
 import { ComponentModal } from "../Modal/index.js";
+import { closeModal } from "../Modal/index.js";
 
-const buttons = document.querySelectorAll(".button__dots");
+const container = document.querySelector("#container");
 
 const watchModal = `
   <form class="watchModal__form">  
@@ -21,32 +22,41 @@ function watchInsertedDiv(url) {
   `;
 }
 
-const createWatchModal = () => {
-  ComponentModal(watchModal);
-};
+document.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (e.target.className === "buttonWatch__dots") {
+    const content = watchModal;
+    const modal = ComponentModal();
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    if (btn === buttons[1]) {
-      createWatchModal();
+    container.innerHTML += modal(content);
 
-      setTimeout(() => {
-        const streamList = document.querySelector(".watchNow__streamsList");
-        const watchModalSubmit = document.querySelector(".watchModal__submit");
-        const watchModalInput = document.querySelector(".watchModal__input");
+    const streamList = document.querySelector(".watchNow__streamsList");
+    const watchModalSubmit = document.querySelector(".watchModal__submit");
+    const watchModalInput = document.querySelector(".watchModal__input");
+    const modalContainer = container.querySelector(".modal__container");
 
-        const submitWatchModal = (url) =>
-          streamList.insertAdjacentHTML("afterbegin", watchInsertedDiv(url));
+    const submitWatchModal = (url) =>
+      streamList.insertAdjacentHTML("afterbegin", watchInsertedDiv(url));
 
-        watchModalSubmit.addEventListener("click", (e) => {
-          e.preventDefault();
-          const url = watchModalInput.value;
-          submitWatchModal(url);
-          watchModalInput.value = "";
-        });
-      }, 0);
-    } else {
-      return;
-    }
-  });
+    const regex =
+      /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/;
+
+    const errorMessage = document.createElement("span");
+    errorMessage.textContent = "Invalid URL!";
+
+    watchModalSubmit.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      if (!regex.test(urlInput.value)) {
+        const urlInput = document.querySelector(".watchModal__input");
+        urlInput.style.border = "1px solid red";
+        urlInput.insertAdjacentElement("afterend", errorMessage);
+        urlInput.value = "";
+        return;
+      }
+
+      submitWatchModal(watchModalInput.value);
+      closeModal(modalContainer);
+    });
+  }
 });
