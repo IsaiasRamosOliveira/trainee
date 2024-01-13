@@ -18,6 +18,11 @@
   align-items: center;
 }
 
+.inputs__error {
+  display: none;
+  color: #e63636;
+}
+
 #inputs__name, 
 #inputs__sub, 
 #inputs__url {

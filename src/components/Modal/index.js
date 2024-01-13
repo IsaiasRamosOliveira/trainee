@@ -4,7 +4,7 @@ function openModal(container, ComponentModal, submitForm, content) {
   }
 }
 
-function closeModal(container) {
+export function closeModal(container) {
   if (container) {
     container.parentElement.remove();
   }
