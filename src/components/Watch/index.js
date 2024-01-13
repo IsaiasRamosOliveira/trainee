@@ -33,6 +33,7 @@ document.addEventListener("click", (e) => {
     const streamList = document.querySelector(".watchNow__streamsList");
     const watchModalSubmit = document.querySelector(".watchModal__submit");
     const watchModalInput = document.querySelector(".watchModal__input");
+    const urlInput = document.querySelector(".watchModal__input");
     const modalContainer = container.querySelector(".modal__container");
 
     const submitWatchModal = (url) =>
@@ -48,13 +49,12 @@ document.addEventListener("click", (e) => {
       e.preventDefault();
 
       if (!regex.test(urlInput.value)) {
-        const urlInput = document.querySelector(".watchModal__input");
         urlInput.style.border = "1px solid red";
         urlInput.insertAdjacentElement("afterend", errorMessage);
         urlInput.value = "";
         return;
       }
-
+      
       submitWatchModal(watchModalInput.value);
       closeModal(modalContainer);
     });
