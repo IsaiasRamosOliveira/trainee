@@ -1,5 +1,4 @@
 function openModal(container, ComponentModal, submitForm, content) {
-  container.innerHTML += ComponentModal(content);
   if (submitForm) {
     submitForm();
   }
@@ -13,8 +12,8 @@ function closeModal(container) {
 }
 
 export const ComponentModal = (content) => {
-  const container = document.querySelector("#container");
 
+  const container = document.querySelector("#container");
   container.addEventListener("click", (e) => {
     const btn = e.target.getAttribute("class");
     const close = container.querySelector(".modal__container");
@@ -28,11 +27,10 @@ export const ComponentModal = (content) => {
 
   document.addEventListener("click", (e) => {
     const close = container.querySelector(".modal__container");
-    if (close && close.contains && !close.contains(e.target) && e.target.getAttribute("class") !== "button__dots") {
+    if (close && close.contains && !close.contains(e.target) && e.target.className !== "btn__dots") {
       closeModal(close);
     }
   });
-
   const Modal = (content) => {
     let modal = `
     <div class="modal">
@@ -50,8 +48,9 @@ export const ComponentModal = (content) => {
   `;
     return modal
   }
+  return Modal;
 }
 
-if ( ComponentModal() === null || ComponentModal() === undefined ) {
+if (ComponentModal() === null || ComponentModal() === undefined) {
   ComponentModal('');
 };
