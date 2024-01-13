@@ -54,8 +54,9 @@ document.addEventListener("click", (e) => {
         urlInput.value = "";
         return;
       }
-      
-      submitWatchModal(watchModalInput.value);
+
+      const url = watchModalInput.value;
+      submitWatchModal(url);
       closeModal(modalContainer);
     });
   }
