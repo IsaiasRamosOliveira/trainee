@@ -70,11 +70,12 @@
   overflow: hidden;
   overflow-x: auto;
   list-style: none;
-  justify-content: center;
+  justify-content: left;
 }
 
 .stream__img {
   width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 2px solid pink;
 }
@@ -113,6 +114,8 @@
 
 .popular__item {
   width: 100%;
+  text-decoration: none;
+  color: white;
 }
 
 .popular__item:hover {

@@ -97,6 +97,7 @@
   margin: 20px 0 0 -18px;
   border: 3px solid #191d1e;
   border-radius: 12px;
+
 }
 
 .mode__light,
@@ -178,3 +179,4 @@
     display: none;
   }
 }
+
