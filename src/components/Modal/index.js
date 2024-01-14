@@ -28,7 +28,6 @@ export const ComponentModal = (content) => {
 
   if (modal) {
     modal.addEventListener("click", (e) => {
-      e.preventDefault()
       const close = container.querySelector(".modal__container");
       if (close && close.contains && !close.contains(e.target) && e.target.className !== "btn__dots" && e.target.className !== "buttonWatch__dots") {
         closeModal(close);
