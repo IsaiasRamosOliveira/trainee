@@ -1,5 +1,4 @@
-import { ComponentModal } from "../Modal/index.js";
-import { closeModal } from "../Modal/index.js";
+import { ComponentModal, closeModal } from "../Modal/index.js";
 
 const container = document.querySelector("#container");
 
@@ -23,7 +22,6 @@ function watchInsertedDiv(url) {
 }
 
 document.addEventListener("click", (e) => {
-  e.preventDefault();
   if (e.target.className === "buttonWatch__dots") {
     const content = watchModal;
     const modal = ComponentModal();
