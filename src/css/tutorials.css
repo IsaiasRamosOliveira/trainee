@@ -209,6 +209,39 @@
   border-radius: 6px;
 }
 
+#tutorials.lightMode {
+  background-color: white;
+  color: black;
+}
+
+#tutorials.lightMode .description__title::after,
+#tutorials.lightMode .offer__title::after,
+#tutorials.lightMode .reading__title span {
+  color: #00a8f3;
+}
+
+#tutorials.lightMode .reading__title,
+#tutorials.lightMode .students__text {
+  color: black;
+}
+
+#tutorials.lightMode .profiles__img,
+#tutorials.lightMode .profiles__more {
+  border: 5px solid white;
+}
+
+#tutorials.lightMode .send__button,
+#tutorials.lightMode .send__input {
+  background-color: #e6e7e7;
+  color: black;
+}
+
+#tutorials.lightMode .reading__button,
+#tutorials.lightMode .offer__button,
+#tutorials.lightMode .button__next {
+  background-color: transparent;
+}
+
 /* media */
 @media screen and (max-width: 1600px) {
   #tutorials {
