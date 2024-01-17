@@ -9,7 +9,7 @@ function toggleThemeFunction() {
   });
 }
 
-const dotsImgs = document.querySelectorAll(".button__dots");
+const dotsImgs = document.querySelectorAll(".button__dots, .buttonWatch__dots, .btn__dots");
 
 const imgSrcValues = [
   "/src/imgs/watch/two-dots.png",
