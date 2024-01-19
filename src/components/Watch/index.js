@@ -15,7 +15,7 @@ const watchModal = `
 function watchInsertedDiv(url) {
   return `<li class="streamsList__user">
     <a href="" class="user__stream">
-      <img class="stream__img" src="${url}" alt="" />
+      <img class="stream__img" src="${url}" alt="Studying streamer picture" />
     </a>
   </li>
   `;
