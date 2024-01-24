@@ -148,14 +148,47 @@
   color: #c9cace;
 }
 
+.active {
+  z-index: 2;
+  width: 100vw !important;
+  opacity: 1 !important;
+  background-color: #191d1ef8 !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .aside__nav {
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 890px) {
   .achievements__anchor {
     gap: 0px;
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 798px) {
+  #aside {
+    width: 30vw;
+    opacity: 0;
+    transition:  300ms ease;
+    z-index: 2;
+  }
+
   .aside__nav {
-    left: 0;
+    min-width: 40vw;
+    align-items:center;
+    gap: 20px;
+    padding: 50px 0 10px 0;
+  }
+  
+  .nav__userCards {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aside__nav {
+    gap: 5px;
   }
 }
