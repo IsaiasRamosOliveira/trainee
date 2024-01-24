@@ -59,3 +59,15 @@
   width: 92%;
   color: #fff;
 }
+
+@media (min-width: 300px) and (max-width: 765px){
+  .modal{
+    width: 280px;
+  }
+}
+
+@media (max-width:299px){
+  .modal{
+    width: 240px;
+  }
+}

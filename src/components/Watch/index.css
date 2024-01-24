@@ -15,7 +15,7 @@
 
 .watchModal__input,
 .watchModal__submit {
-  width: 240px;
+  width: 80%;
   height: 40px;
   color: white;  
   border-radius: 6px;
@@ -42,3 +42,4 @@
 .watchModal__label > span {
   color: #e63636;
 }
+
