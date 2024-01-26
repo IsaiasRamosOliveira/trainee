@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/src/components/Modal/index.css" />
   <link rel="stylesheet" href="/src/components/Watch/index.css">
   <link rel="stylesheet" href="/src/components/Tutors/index.css">
+  <link rel="stylesheet" href="/src/components/Notification/index.css">
 </head>
 
 <body id="container">
@@ -106,7 +107,7 @@
             dark_mode
           </button>
         </div>
-        <button class="account__notifi">
+        <button type="button" class="account__notifi">
           <img class="notifi__img" src="/src/imgs/header/notification.png" alt="button notifition" />
         </button>
         <p class="account__name">Hey,</p>
@@ -284,8 +285,8 @@
             <img class="button__dots" src="/src/imgs/tutorials/two-dots.png" alt="two dots button" />
           </button>
         </div>
-        <label class="form__send" for="search">
-          <input class="send__input" type="text" placeholder="Find best tutorial..." required />
+        <label class="form__send">
+          <input id="send__input" class="send__input" type="text" placeholder="Find best tutorial..." required />
           <button class="send__button" type="submit">Search</button>
         </label>
       </form>
@@ -344,6 +345,7 @@
   </main>
 
   <script src="/src/js/theme.js"></script>
+  <script type="module" src="/src/components/Notification/index.js"></script>
   <script type="module" src="/src/components/Modal/index.js"></script>
   <script type="module" src="/src/components/Watch/index.js"></script>
   <script type="module" src="/src/components/Tutors/index.js"></script>
