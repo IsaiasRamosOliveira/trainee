@@ -110,6 +110,7 @@
 .tutors__menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .popular__item {
@@ -147,7 +148,7 @@
   background-color: transparent;
   width: 100px;
   height: 29px;
-  padding: 0 10px;
+  padding: 0 0 0 17px;
 }
 
 .tutors__menu > .menu__options > .options__filter {
