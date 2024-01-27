@@ -112,6 +112,16 @@
   justify-content: space-between;
 }
 
+.popular__menu {
+  display: flex;
+  align-items: center;
+}
+
+.popular__menu button {
+  display: flex;
+  align-items: center;
+}
+
 .popular__item {
   width: 100%;
   text-decoration: none;

@@ -153,8 +153,11 @@
 
 .buy__poster {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+}
+.buy__upper {
+  display: flex;
+  gap: 20px;
 }
 
 .poster__offer > .offer__title::after {
@@ -180,7 +183,7 @@
   align-items: center;
   justify-content: center;
   min-width: 350px;
-  height: 20vh;
+  /* height: 20vh; */
   gap: 100px;
   border-radius: 12px;
   background: rgb(124, 121, 252);
