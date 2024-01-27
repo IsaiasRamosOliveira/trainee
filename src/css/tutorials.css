@@ -201,7 +201,7 @@
 }
 
 .banner__logo > .logo__text {
-  margin: 0 0 15px -6px;
+ /* margin: 0 0 15px -6px; */
   color: #323337;
 }
 
