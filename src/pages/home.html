@@ -21,7 +21,7 @@
 <body id="container">
   <aside id="aside">
     <section class="aside__nav">
-      <h3>Trainee</h3>
+      <h3 class="nav__title">Trainee</h3>
       <div class="nav__summary nav__summary--dashboard">
         <a href="" class="summary__page">
           <img src="/src/imgs/aside/videogame.png" alt="Dashboard Image" />
@@ -55,6 +55,7 @@
           <span>Lesson 8. Physics</span>
         </a>
       </div>
+
       <div class="nav__achievements">
         <a class="achievements__anchor" href="">
           <img src="/src/imgs/aside/diamante.png" alt="Achievements Image" />
@@ -319,16 +320,20 @@
       </div>
       <div class="tutorials__buy">
         <div class="buy__poster">
-          <div class="poster__offer">
-            <h2 class="offer__title">Special</h2>
+          <div class="buy__upper">
+            <div class="poster__offer">
+              <h2 class="offer__title">Special</h2>
+            </div>
+            <button class="offer__button offer__button--spacing">
+              <img class="button__next" src="/src/imgs/tutorials/next.png" alt="next button" />
+            </button>
+            <button class="offer__button">
+              <img class="button__dots" src="/src/imgs/tutorials/two-dots.png" alt="two dots button" />
+            </button>
+          </div>
+          <div class="buy__down">
             <p class="offer__text">Up to -70% discount</p>
           </div>
-          <button class="offer__button offer__button--spacing">
-            <img class="button__next" src="/src/imgs/tutorials/next.png" alt="next button" />
-          </button>
-          <button class="offer__button">
-            <img class="button__dots" src="/src/imgs/tutorials/two-dots.png" alt="two dots button" />
-          </button>
         </div>
         <div class="buy__banner">
           <img class="banner__img" src="/src/imgs/tutorials/logo.png" alt="logo" />
@@ -344,8 +349,9 @@
     </div>
   </main>
 
-  <script src="/src/js/theme.js"></script>
+  <script src="/src/js/menu.js"></script>
   <script type="module" src="/src/components/Notification/index.js"></script>
+  <script src="/src/js/theme.js"></script>
   <script type="module" src="/src/components/Modal/index.js"></script>
   <script type="module" src="/src/components/Watch/index.js"></script>
   <script type="module" src="/src/components/Tutors/index.js"></script>
