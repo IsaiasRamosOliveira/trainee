@@ -1,11 +1,17 @@
-const container = document.getElementById("container");
+const container = document.querySelector("#container");
 
 let notifiVisible = false;
 
 const notifi = () => {
   return `
     <div class="notifi">
-      <p class="notifi__container">oi</p>
+      <p class="notifi__title">Notifications</p>
+      <div class="notifi__bar notifi__bar--color"></div>
+      <div class="notifi__container">
+        <p class="container__message">No Notifications</p>
+        <div class="container__bar1 notifi__bar--color"></div>
+        <div class="container__bar2 notifi__bar--color"></div>
+      </div>
     </div>
   `;
 }
