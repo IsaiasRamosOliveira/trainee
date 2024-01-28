@@ -21,17 +21,17 @@
 }
 
 #container.lightMode .modal__container,
-#container.lightMode .modal__container  .close__button{
+#container.lightMode .modal__container .close__button {
   background-color: #e6e7e7;
-  color: black; 
+  color: black;
 }
 
-#container.lightMode .modal__container  input,
-#container.lightMode .modal__container  button{
+#container.lightMode .modal__container input,
+#container.lightMode .modal__container button {
   background-color: white;
 }
 
-#container.lightMode .modal__container  button,
+#container.lightMode .modal__container button,
 #container.lightMode .modal__container legend {
   color: black;
 }
