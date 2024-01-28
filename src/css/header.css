@@ -159,9 +159,12 @@
   }
 
   .header__aside {
+    width: 18px;
+    height: 16px;
     display: inline;
-    background-color: #191d1e;
+    background-color: transparent;
     border: none;
+    z-index: 2;
   }
 
   .aside__menu {
