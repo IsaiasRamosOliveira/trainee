@@ -97,7 +97,10 @@
   margin: 20px 0 0 -18px;
   border: 3px solid #191d1e;
   border-radius: 12px;
+}
 
+#header.lightMode .profile__add {
+  border: 3px solid white;
 }
 
 .mode__light,
@@ -180,3 +183,9 @@
   }
 }
 
+@media (min-width: 350px) and (max-width: 798px) {
+  .account__mode {
+    display: flex;
+    margin: 0 5px;
+  }
+}
