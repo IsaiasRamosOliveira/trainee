@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .watch__watchNow {
@@ -110,6 +111,27 @@
 .tutors__menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+}
+
+.popular__menu {
+  display: flex;
+  align-items: center;
+}
+
+.popular__menu button {
+  display: flex;
+  align-items: center;
+}
+
+.popular__menu {
+  display: flex;
+  align-items: center;
+}
+
+.popular__menu button {
+  display: flex;
   align-items: center;
 }
 

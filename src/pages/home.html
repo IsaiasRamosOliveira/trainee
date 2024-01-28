@@ -15,12 +15,13 @@
   <link rel="stylesheet" href="/src/components/Modal/index.css" />
   <link rel="stylesheet" href="/src/components/Watch/index.css">
   <link rel="stylesheet" href="/src/components/Tutors/index.css">
+  <link rel="stylesheet" href="/src/components/Notification/index.css">
 </head>
 
 <body id="container">
   <aside id="aside">
     <section class="aside__nav">
-      <h3>Trainee</h3>
+      <h3 class="nav__title">Trainee</h3>
       <div class="nav__summary nav__summary--dashboard">
         <a href="" class="summary__page">
           <img src="/src/imgs/aside/videogame.png" alt="Dashboard Image" />
@@ -54,6 +55,7 @@
           <span>Lesson 8. Physics</span>
         </a>
       </div>
+
       <div class="nav__achievements">
         <a class="achievements__anchor" href="">
           <img src="/src/imgs/aside/diamante.png" alt="Achievements Image" />
@@ -99,14 +101,14 @@
 
       <div class="header__account">
         <div class="account__mode">
-          <button class="material-symbols-outlined mode__light">
+          <button class="material-symbols-outlined mode__light mode__themeButton">
             light_mode
           </button>
-          <button class="material-symbols-outlined mode__dark">
+          <button class="material-symbols-outlined mode__dark mode__themeButton">
             dark_mode
           </button>
         </div>
-        <button class="account__notifi">
+        <button type="button" class="account__notifi">
           <img class="notifi__img" src="/src/imgs/header/notification.png" alt="button notifition" />
         </button>
         <p class="account__name">Hey,</p>
@@ -284,8 +286,8 @@
             <img class="button__dots" src="/src/imgs/tutorials/two-dots.png" alt="two dots button" />
           </button>
         </div>
-        <label class="form__send" for="search">
-          <input class="send__input" type="text" placeholder="Find best tutorial..." required />
+        <label class="form__send">
+          <input id="send__input" class="send__input" type="text" placeholder="Find best tutorial..." required />
           <button class="send__button" type="submit">Search</button>
         </label>
       </form>
@@ -318,16 +320,20 @@
       </div>
       <div class="tutorials__buy">
         <div class="buy__poster">
-          <div class="poster__offer">
-            <h2 class="offer__title">Special</h2>
+          <div class="buy__upper">
+            <div class="poster__offer">
+              <h2 class="offer__title">Special</h2>
+            </div>
+            <button class="offer__button offer__button--spacing">
+              <img class="button__next" src="/src/imgs/tutorials/next.png" alt="next button" />
+            </button>
+            <button class="offer__button">
+              <img class="button__dots" src="/src/imgs/tutorials/two-dots.png" alt="two dots button" />
+            </button>
+          </div>
+          <div class="buy__down">
             <p class="offer__text">Up to -70% discount</p>
           </div>
-          <button class="offer__button offer__button--spacing">
-            <img class="button__next" src="/src/imgs/tutorials/next.png" alt="next button" />
-          </button>
-          <button class="offer__button">
-            <img class="button__dots" src="/src/imgs/tutorials/two-dots.png" alt="two dots button" />
-          </button>
         </div>
         <div class="buy__banner">
           <img class="banner__img" src="/src/imgs/tutorials/logo.png" alt="logo" />
@@ -343,6 +349,8 @@
     </div>
   </main>
 
+  <script src="/src/js/menu.js"></script>
+  <script type="module" src="/src/components/Notification/index.js"></script>
   <script src="/src/js/theme.js"></script>
   <script type="module" src="/src/components/Modal/index.js"></script>
   <script type="module" src="/src/components/Watch/index.js"></script>

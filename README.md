@@ -1,5 +1,5 @@
 <h1 align="center">Trainee - Students' Website</h1> 
-<h3 align="center"> Isaías Ramos de Oliveira Training - Class B</h3>
+<h3 align="center"> Isaías Ramos de Oliveira Training</h3>
 <br>
 
 <p align="center">
@@ -10,6 +10,7 @@
 <p align="center">
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-login-screen">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-modal-tutor">Functionalities</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-other-projects-made-by-us">Other Projects</a>
 </p>
 
@@ -31,15 +32,36 @@ Technologies used in this the project:
 <br>
 
 Login screen where users can log in or sign up.
-
+<br>
 
 # 🖥️ Home screen
+<br>
 
-<img align='center' src="https://cdn.dribbble.com/users/1684108/screenshots/16661616/media/d48d1a5a795fe74734dee1a1565f9c7f.jpeg" alt="" >
+![My Image](/src/imgs/readme/print-principal-projeto.png)
+
+# 🖥️ Home screen (light mode)
+<br>
+
+![My Image](/src/imgs/readme/print-tema-claro.png)
+
+# ⌨️ Modal Tutor
+
+- Add another tutor to the list.
 <br>
 <br>
 
-Home screen with all the website's content.
+![My Image](/src/imgs/readme/modaltutor.png)
+
+<br>
+
+# ⌨️ Modal Watch
+
+- Add another studying livestream to the list.
+<br>
+
+<br>
+
+![My Image](/src/imgs/readme/modalwatch-print.png)
 
 ## 🔍 Other Projects Made By Us
 
