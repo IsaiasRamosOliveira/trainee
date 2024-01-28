@@ -13,14 +13,19 @@
   background-color: #191D1E;
 }
 
+*::-webkit-scrollbar-thumb {
+  background-color: #272830;
+  border-radius: 20px;
+}
+
 #container.lightMode *::-webkit-scrollbar-thumb {
   background-color: #a1a3a8;
   border-radius: 4%;
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #272830;
-  border-radius: 20px;
+#container.lightMode *::-webkit-scrollbar{
+  background-color: white;
+  border-radius: 4%;
 }
 
 #container {
