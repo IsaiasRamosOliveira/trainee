@@ -1,18 +1,14 @@
-const changeThemeButton = document.querySelector(".account__mode");
-const screenBlocks = document.querySelectorAll(
-  "#container, #aside, #watch, #header, #tutorials"
-);
 const container = document.querySelector("#container");
-const dotsImgs = document.querySelectorAll(
-  ".button__dots, .buttonWatch__dots, .btn__dots"
-);
 
 function toggleLightMode() {
+  const screenBlocks = document.querySelectorAll(
+    "#container, #aside, #watch, #header, #tutorials"
+  );
   screenBlocks.forEach((block) => {
     block.classList.toggle("lightMode");
   });
   saveThemeState(document.body.classList.contains("lightMode"));
-  changeDotImgColor()
+  changeDotImgColor();
 }
 
 function saveThemeState(isLightMode) {
@@ -27,6 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function changeDotImgColor() {
+  const dotsImgs = document.querySelectorAll(
+    ".button__dots, .buttonWatch__dots, .btn__dots"
+  );
   dotsImgs.forEach((img) => {
     container.classList.contains("lightMode")
       ? (img.src = "/src/imgs/theme/twoDotsLightMode.png")
@@ -34,7 +33,11 @@ function changeDotImgColor() {
   });
 }
 
-changeThemeButton.addEventListener("click", () => {
-  toggleLightMode();
-  changeDotsImgs();
+document.addEventListener("click", (e) => {
+  if (
+    e.target.className === "account__mode" ||
+    e.target.className.includes("mode__themeButton")
+  ) {
+    toggleLightMode();
+  }
 });
